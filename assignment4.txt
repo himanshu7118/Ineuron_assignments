@@ -1,0 +1,81 @@
+1.	What exactly is []?
+Ans: It’s a empty list.
+2.	In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Ans:
+Ex:
+spam=[1,2]
+spam.append('hello')
+print(spam)
+
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+3.	What is the value of spam[int(int('3' * 2) / 11)]?
+Ans: d
+
+4.	What is the value of spam[-1]?
+Ans: d
+
+5.	What is the value of spam[:2]?
+Ans: ab
+
+Let's pretend bacon has the list [3.14, 'cat,' 11, 'cat,' True] for the next three questions.
+Not: here you did mistake when define the list original list is look like :
+[3.14, 'cat', 11, 'cat', True]
+
+6.	What is the value of bacon.index('cat')?
+Ans: you can’t check index by bacon.index[‘cat’]
+You can check index by bacon.index(‘cat’)
+The answer is 1.
+
+7.	How does bacon.append(99) change the look of the list value in bacon?
+Ans: [3.14, 'cat', 11, 'cat', True,99]
+
+8.	How does bacon.remove('cat') change the look of the list in bacon?
+Ans: [3.14, 11, 'cat', True,99]
+
+9.	What are the list concatenation and list replication operators?
+Ans: The operator for list concatenation is +, while the operator for replication is *.
+
+10.	What is difference between the list methods append() and insert()?
+Ans: Here in append() you can append any value at the end of the list.
+Ex = [1,2,3,4]
+Ex.append(5)
+Ans : [1,2,3,4,5]
+
+In insert() you can insert any value in any position inside the list.
+Ex.insert(2,’hye’)
+Ans: [1,2,’hye’,3,4,5]
+
+11.	What are the two methods for removing items from a list?
+Ans: remove() and pop()
+
+12.	Describe how list values and string values are identical.
+Ans: Here I describe it in example
+Ex = [1,2,’hello’,3]
+Here list have different values it have values which we define in the list ex 1,2,…
+Here in the string values we have ‘hello’.
+So here list length is 4
+But string length is 5
+Both strings and lists have lengths: a string's length is the number of characters in the string; a list's length is the number of items in the list. Each character in a string as well as each item in a list has a position, also called an index.
+
+13.	What's the difference between tuples and lists?
+Ans: They are mostly similar but in one case they are different
+Tuple is immutable you can not change define tuple values.
+List is mutable you can change value inside the list.
+
+14.	How do you type a tuple value that only contains the integer 42?
+Ans: (42)
+
+15.	How do you get a list value's tuple form? How do you get a tuple value's list form?
+Ans: 
+Tuple of list:
+([3.14, 'cat', 11], ['cat', True])
+List of tuple:
+[(3.14, 'cat', 11), ('cat', True)]
+
+
+16.	Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+Ans: string and integer
+
+17.	How do you distinguish between copy.copy() and copy.deepcopy()?
+Ans: copy() create reference to original object. If you change copied object - you change the original object . deepcopy() creates new object and does real copying of original object to new one. Changing new deepcopied object doesn't affect original object.
+
